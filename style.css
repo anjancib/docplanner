@@ -1,0 +1,458 @@
+*{
+    margin-top: 0;
+}
+::selection{
+    color: #FFFFFF;
+    background-color: #00B39B;
+}
+.logo{
+    height: 34px;
+    width: 268px;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    /* box-shadow: 0 2px 0 0 #d3cfc9; */
+    z-index: 100;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.dropmenu{
+    display: none;
+    position: absolute;
+    right: 5px;
+    padding: 2px;
+    padding-top: 10px;
+    box-shadow: 0 5px 10px 0px gray;
+    top: 25px;
+}
+.menu{
+    display: flex;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+.menu-item{
+    list-style: none;
+    margin-left: 20px;
+    color: #abababab;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+.menu-item:hover .dropmenu{
+    display: flex;
+    flex-direction: column;
+}
+.dropmenu-item{
+    list-style: none;
+    padding: 5px;
+    color: #abababab;
+    background-color: #ffffff;
+
+}
+.menu-item:hover{
+    color: #00b39b;
+}
+.dropmenu-item:hover{
+    color: #00b39b;
+    background-color: #f0eded;
+}
+.intro{
+    padding-top: 75px;
+    text-align: center;
+}
+.intro h1{
+    margin: 40px;
+    color: #00b39b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.intro p{
+    color: gray;
+}
+.paragraphs {
+    display: flex;
+    justify-content: center;
+}
+.paragraphs p{
+    width: 30%;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boxes
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    margin-left: 10px;
+}
+.patient{
+    border: 2px solid #00b39b;
+    border-radius: 10px;
+    background-color: #00b39b;
+    color: #ffffff;
+    width: 20%;
+    padding: 20px;
+    position: relative;
+    right: 20px;
+    font-size: 20px;
+}
+.patient:hover{
+    background-color: #40b9a9;
+    border: 2px solid #40b9a9;
+}
+.patient:hover select{
+    background-color: #40b9a9;
+}
+.doctor{
+    border: 2px solid #3d83df
+    ;
+    border-radius: 10px;
+    background-color: #3d83df
+    ;
+    color: #ffffff;
+    width: 20%;
+    padding: 20px;
+    font-size: 20px;
+}
+.doctor:hover{
+    background-color: #4489e3;
+    border: 2px solid #4489e3;
+}
+.doctor:hover select{
+    background-color: #4489e3;
+}
+.clinic{
+    border: 2px solid #1b2734;
+    border-radius: 10px;
+    background-color: #1b2734;
+    color: #ffffff;
+    width: 20%;
+    padding: 20px;
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+}
+.clinic:hover{
+    background-color: #253545;
+    border: 2px solid #253545;
+}
+.clinic:hover select{
+    background-color: #253545;
+}
+.patient select{
+    background-color: #00B39B;
+    border: none;
+    font-size: 25px;
+    text-decoration: underline #FFFFFF;
+    color: #FFFFFF;
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+}
+.patient select:hover {
+    background-color: #40b9a9;
+}
+.doctor select{
+    background-color: #3d83df
+    ;
+    border: none;
+    font-size: 25px;
+    text-decoration: underline #FFFFFF;
+    color: #FFFFFF;
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+}
+.clinic select{
+    background-color: #1b2734;
+    border: none;
+    font-size: 24px;
+    text-decoration: underline #FFFFFF;
+    color: #FFFFFF;
+    position: relative;
+    top: 80px;
+    cursor: pointer;
+}
+.company{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.company h1{
+    width: 300px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #00b39b;
+}
+.brands{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: start;
+    margin-left: 50px;
+}
+.brands img{
+    width: 125px;
+    height: 20px;
+}
+.svg{
+    list-style: none;
+    margin: 5px;
+    width: 125px;
+    height: 20px; 
+    size: 50px;
+    fill: gray;
+    filter: grayscale(100%);
+    text-align: left;
+    cursor: pointer;
+}
+.svg:hover{
+    fill: #00B39B;
+    filter: grayscale(0);
+}
+.part3{
+    display: flex;
+    background-image: url("doclogo.png");
+    justify-content: center;
+    height: 600px;
+}
+.part3 img{
+    position: relative;
+}
+.description{
+    width: 497.5px;
+    height: 201.2px;
+    position: relative;
+    top: 100px;
+    
+}
+.description p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: gray;
+    position: relative;
+    left: 80px;
+}
+.description h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    color: #00B39B;
+    text-align: center;
+}
+.details{
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    left: 10px;
+}
+.leaders{
+    border: 2px solid #eae8e8;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 250px;
+    height: 228.75px;
+    position: relative;
+    left: 140px;
+    top: 50px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+.appointment{
+    border: 2px solid #eae8e8;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    width: 250px;
+    height: 228.75px;
+    position: relative ;
+    left: 150px;
+    top: 20px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+.numpatient{
+    border: 2px solid #eae8e8;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 250px;
+    height: 228.75px;
+    position: relative;
+    left: 140px;
+    top: 20px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+.numdoctor{
+    border: 2px solid #eae8e8;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 250px;
+    height: 228.75px;
+    position: relative;
+    left: 150px;
+    top: -10px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+
+}
+.details h3{
+    padding-top: 40px;
+    color: #00B39B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.details p{
+    padding-top: 20px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.part4{
+    margin-top: 40px;
+    text-align: center;
+    width: 50%;
+    margin-left: 400px;
+}
+.part4 h2{
+    color: #00B39B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+}
+.part4 p{
+    padding-top: 10px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    width: 70%;
+    text-align: center;
+    padding-left: 100px;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+.box{
+    padding: 20px;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* padding: 0; */
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0; */
+    margin-top: 0;
+}
+.button h4{
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+    color: gray;
+    /* padding: 0; */
+}
+.button button{
+    background-color: #3d83df;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    height: 30px;
+    width: 103.662px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid #3d83df;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+    /* padding: 0; */
+}
+.button button:hover{
+    background-color: #3674c5;
+}
+.end{
+    margin-top: 50px;
+    text-align: center;
+}
+.end h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #333333;
+}
+.end button{
+    background-color: #3d83df;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 800;
+    height: 40px;
+    width: 210.4px;
+    padding: 14px 18px 14px 18px;
+    border: 2px solid #3d83df;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+.end button:hover{
+    background-color: #3674c5;
+}
+footer{
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-top: 1px solid rgb(230, 228, 228);
+    padding-top: 40px;
+}
+footer h6{
+    margin-top: 0;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #4489e3;
+    text-decoration: none;
+}
